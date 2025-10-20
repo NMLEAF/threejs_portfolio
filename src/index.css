@@ -77,7 +77,7 @@ body {
   }
 
   .nav-li_a {
-    @apply text-lg md:text-base hover:text-white transition-colors;
+    @apply text-lg font-medium md:text-base hover:text-white transition-colors;
   }
 
   .nav-sidebar {
