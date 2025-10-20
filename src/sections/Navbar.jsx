@@ -52,7 +52,9 @@ const Navbar = () => {
       </div>
 
       <div className={`nav-sidebar ${isOpen ? "max-h-screen" : "max-h-0"}`}>
-        <NavItems />
+        <div className="w-full flex justify-center items-center py-4">
+          <NavItems />
+        </div>
       </div>
     </header>
   );
