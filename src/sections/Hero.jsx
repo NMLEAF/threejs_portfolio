@@ -23,6 +23,7 @@ const Hero = () => {
 
   return (
     <section className="min-h-screen w-full flex flex-col relative">
+      {/* Introductory Text */}
       <div className="w-full mx-auto flex flex-col sm:mt-36 mt-20 c-space gap-3">
         <p className="sm:text-3xl text-xl font-medium text-white text-center font-generalsans">
           Hi, I am Natnael <span className="waving-hand">👋</span>
@@ -32,8 +33,8 @@ const Hero = () => {
         </p>
       </div>
 
+      {/* 3D Canvas Section */}
       <div className="w-full h-full absolute inset-0">
-        {/* <Leva /> */}
         <Canvas className="w-full h-full">
           <Suspense fallback={<CanvasLoader />}>
             <PerspectiveCamera makeDefault position={[0, 0, 20]} />
@@ -59,6 +60,7 @@ const Hero = () => {
         </Canvas>
       </div>
 
+      {/* Call to Action Button */}
       <div className="absolute bottom-7 left-0 right-0 w-full z-10 c-space">
         <a href="#about" className="w-fit">
           <Button
